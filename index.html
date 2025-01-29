@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Robotics Science Club || Home</title>
+    <!-- <link rel="stylesheet" href="style.css"> -->
+
+    <style>
+        @import url('https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css');
+        @import url('https://fonts.googleapis.com/css2?family=Inter+Tight:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+        * {
+            font-family: 'Inter Tight', sans-serif;
+        }
+
+        body {
+            background-color: #E8E8E8;
+
+        }
+
+        .spacer {
+            height: 54px;
+            width: 100%;
+        }
+
+        header {
+            height: 564px;
+            width: 100%;
+
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        .leftHead {
+
+            height: 100%;
+            width: 50%;
+
+
+        }
+
+        .leftHead>h1 {
+            /* background-color: aliceblue; */
+            padding-left: 48px;
+            font-size: 84px;
+            margin: 0;
+            margin-top: 12px;
+
+        }
+
+        .leftHead>p {
+            padding-left: 48px;
+            width: 70%;
+        }
+
+        .leftHead>button {
+            margin-left: 48px;
+            margin-top: 32px;
+            height: 48px;
+            width: 184px;
+            border-radius: 500px;
+            background-color: #43C05E;
+            outline: none;
+            border: none;
+            cursor: pointer;
+            color: #E8E8E8;
+            font-size: 20px;
+        }
+
+        .leftHead>button:hover {
+            background-color: #3db156;
+        }
+
+        .leftHead>button:active {
+            transform: translateY(2px);
+        }
+
+        .rightHead {
+            height: 100%;
+            width: 50%;
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .rightHead>img {
+            width: 80%;
+            aspect-ratio: 1/1;
+
+
+        }
+
+        .qa {
+            text-align: center;
+            font-size: 42px;
+        }
+
+        .actionSel {
+            width: 90%;
+            height: 128px;
+            background-color: #EFEFEF;
+            margin: 0 auto;
+            border-radius: 10px;
+
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        .actionSel>div {
+            height: 80%;
+            aspect-ratio: 1/1;
+            background-color: #DFDFDF;
+            border-radius: 15px;
+            box-shadow: 0px 3px 4px #00000050;
+
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            transition: all 0.2;
+        }
+
+        .actionSel>div:hover {
+            background-color: #c5c5c5;
+            transform: translateY(-2px);
+        }
+
+        .actionSel>div:active {
+            transform: translateY(2px);
+        }
+
+        .actionSel>div>a>img {
+            height: 64px;
+            width: 64px;
+
+        }
+
+        .exp {
+            margin-top: 64px;
+            text-align: center;
+            font-size: 24px;
+        }
+
+        .explore {
+            height: 564px;
+            width: 100%;
+
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .exploreLeft {
+            height: 100%;
+            width: 60%;
+        }
+
+        .exploreLeft>p {
+            font-family: monospace;
+            font-size: 22px;
+            padding-left: 48px;
+            width: 80%;
+            margin-bottom: 10px;
+        }
+
+        .exploreRight {
+            height: 100%;
+            width: 40%;
+
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .exploreRight>img {
+            height: 90%;
+            width: auto;
+
+        }
+
+        footer {
+            background-color: #222222;
+            margin: 0;
+            padding: 0;
+            height: 48px;
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: center;
+            align-items: center;
+        }
+
+        footer>p {
+            text-align: center;
+            color: #DFDFDF;
+            margin: 0;
+            padding: 0;
+        }
+
+        button>a {
+            color: #DFDFDF;
+            text-decoration: none;
+            display: block;
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 100%;
+        }
+
+
+        @media only screen and (max-width: 768px) {
+
+
+
+            header {
+                height: 1264px;
+                width: 100%;
+
+                display: flex;
+                flex-flow: column-reverse wrap;
+                justify-content: space-between;
+
+
+            }
+
+            .leftHead {
+
+                height: 50%;
+                width: 100%;
+
+
+            }
+
+            .rightHead {
+                height: 50%;
+                width: 100%;
+            }
+
+            .actionSel {
+                height: 94px;
+            }
+
+            .actionSel>div {
+                height: 50%;
+                aspect-ratio: 1/1;
+
+            }
+
+            .actionSel>div>img {
+                height: 32px;
+                width: 32px;
+
+            }
+
+            .explore {
+                height: 450px;
+            }
+
+            .exploreLeft>p {
+                font-size: 16px;
+                padding-left: 12px;
+                width: 100%;
+                margin-bottom: 0px;
+                text-align: center;
+            }
+
+            .exploreLeft {
+                height: 100%;
+                width: 100%;
+            }
+
+            .exploreRight {
+                display: none;
+            }
+
+            .exploreRight>img {
+                height: 60%;
+                width: auto;
+
+            }
+
+        }
+
+        @media only screen and (max-width: 600px) {
+
+            header {
+                height: 964px;
+                width: 100%;
+
+                display: flex;
+                flex-flow: column-reverse wrap;
+                justify-content: space-between;
+
+
+            }
+
+            .leftHead {
+                height: 50%;
+                width: 100%;
+
+
+            }
+
+            .leftHead>h1 {
+                padding-left: 24px;
+                font-size: 54px;
+                margin: 0;
+                margin-top: 12px;
+
+            }
+
+            .leftHead>p {
+                padding-left: 24px;
+                font-size: 12px;
+            }
+
+            .leftHead>button {
+                display: block;
+                margin: 0 auto;
+                margin-top: 64px;
+            }
+
+            .qa {
+                font-size: 28px;
+            }
+
+            .actionSel>div {
+                height: 40%;
+                aspect-ratio: 1/1;
+                border-radius: 500px;
+
+            }
+
+            .actionSel>div>img {
+                height: 18px;
+                width: 18px;
+
+            }
+
+            .exp {
+                margin-top: 64px;
+                text-align: center;
+                font-size: 18px;
+            }
+
+            .explore {
+                height: 600px;
+            }
+
+            .exploreLeft>p {
+                font-size: 15px;
+                margin: 0 auto;
+                width: 90%;
+                margin-bottom: 0px;
+                text-align: left;
+            }
+
+            footer>p {
+                font-size: 10px;
+            }
+
+        }
+    </style>
+
+
+</head>
+
+<body>
+    <div class="spacer">
+    </div>
+
+    <header>
+        <div class="leftHead">
+            <h1>Think</h1>
+            <h1 style="color: #43C05E;">
+                Inspire,
+            </h1>
+            <h1>Transform</h1>
+            <br>
+            <p>
+                Welcome to the Robotic Science Club! 🤖✨ Join a community of creative tech enthusiasts. Play games,
+                learn coding, build projects, and chat with AI. Ready to dive into the future? Join us now! 🚀🤖
+                #JoinTheFuture #RoboticScienceClub
+            </p>
+
+            <button>
+                <!-- ! Comment link -->
+                <a
+                    href="https://docs.google.com/forms/d/e/1FAIpQLScxrnBhu-FbZ9iA8X9gcGM2NXIVpiUgONL4-xygj8tnNBD3lg/viewform?usp=sf_link">
+                    Join
+                </a>
+            </button>
+        </div>
+        <div class="rightHead">
+            <!-- ! Comment Photo -->
+            <img src="http://drive.google.com/uc?export=view&id=1Dl9LGg-k9kMbTpIdzZEU8kumSdT1yR2P" alt="headerImage">
+        </div>
+    </header>
+
+    <h2 class="qa">
+        Quick Actions
+    </h2>
+    <br>
+    <div class="actionSel">
+        <!-- ! Comment Icon -->
+        <!-- ! Coment Link -->
+        <div>
+            <a href="https://sites.google.com/view/roboticscienceclub/project/2?authuser=0">
+                <img src="http://drive.google.com/uc?export=view&id=1taTP5yySw1pzoopDPj0yek-y3SEDqNej" alt="">
+            </a>
+        </div>
+        <!--Photo icon Link-->
+        <div>
+            <a href="https://sites.google.com/view/roboticscienceclub/photo">
+                <img src="http://drive.google.com/uc?export=view&id=1rWqeiI9-h2hzKgW8S9iQWv89N8E442QT" alt="">
+            </a>
+        </div>
+
+
+        <div>
+            <a href="https://sites.google.com/view/roboticscienceclub/video">
+                <img src="http://drive.google.com/uc?export=view&id=1k9atNBZ49S5dxibLOXNGuGDPovb90Ek2" alt="">
+            </a>
+        </div>
+
+        <div>
+            <a href="https://sites.google.com/view/roboticscienceclub/project">
+                <img src="http://drive.google.com/uc?export=view&id=1AjPZ5RIttH5G9DJ26guvGK36jKj73TMq" alt="">
+            </a>
+        </div>
+
+        <div>
+            <a href="https://poki.com/">
+                <img src="http://drive.google.com/uc?export=view&id=1gCnmW39sqqgtHvt4lwiEC5b__oSIi8Io" alt="">
+            </a>
+        </div>
+
+        <div>
+            <a href="https://sites.google.com/view/roboticscienceclub/learning">
+                <img src="http://drive.google.com/uc?export=view&id=1YOxKacv6r2IYyYAtTfmAsdAaWDSHOl1l" alt="">
+            </a>
+        </div>
+
+    </div>
+
+    <h2 class="exp">
+        **Exploring the Future with Robotics Science Club**
+    </h2>
+
+    <div class="explore">
+        <div class="exploreLeft">
+            <p>
+                The Robotics Science Club is a hub of technology, curiosity, and innovation where all ages converge to
+                explore the world of robotics. Through hands-on projects, members learn, create, and collaborate,
+                bridging theory and practice.
+            </p>
+            <p>
+                In this vibrant community, participants assemble robots, code behaviors, and integrate sensors, gaining
+                a profound understanding of STEM principles. Collaboration is key, fostering teamwork and diverse
+                perspectives.
+            </p>
+            <p>
+
+                Coding challenges, workshops, and competitions enhance skills in AI and programming, preparing members
+                for a technology-driven world. The club serves as a launchpad for potential careers in engineering,
+                research, and more.
+            </p>
+            <p>
+                Ultimately, the Robotics Science Club is where curiosity thrives, innovation blooms, and the future
+                comes to life through the exploration of robotics and its limitless possibilities.
+            </p>
+        </div>
+        <div class="exploreRight">
+            <!-- ! Comment Photo -->
+            <img src="http://drive.google.com/uc?export=view&id=1p6OCA89FZWr_iph-MCqdYEuH2AwyklB-" alt="idk">
+        </div>
+    </div>
+
+    <div class="spacer"></div>
+
+
+    <footer>
+        <p>COPYRIGHT ©2023, PARENTS AGAIN. ALL RIGHTS RESERVED.</p>
+    </footer>
+
+
+    <script src="https://cdn.botpress.cloud/webchat/v2.2/inject.js"></script>
+    <script src="https://files.bpcontent.cloud/2025/01/28/18/20250128184157-HMW3ME3C.js"></script>
+    defer></script>
+    <script>
+
+
+    </script>
+</body>
+
+</html>
